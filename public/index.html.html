@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAPE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color:rgb(243, 238, 238) ;
+        }
+        .skincare,.imgs,.overall1,.issue,.latest,.health,.late,.la,.shape{
+                padding: 0px 50px;
+            }
+        .navbar{
+            width: 100%;
+            background-color: aliceblue;
+            height: 140px;
+            border-bottom: 1px solid rgb(221, 209, 209);
+            box-shadow: 3px black;
+        }
+        .nav1{
+            display: flex;
+            align-items: center;
+            }
+            .shape{
+                /* margin-left: 30px; */
+            }
+        .logo,img{
+            margin-top: 4px;
+            width: 200px;
+            /* margin-left: 35px; */
+        }
+        .sideheading1,.sideheading2{
+             font-size: 17px;
+             margin-left: 10px;
+             border-left: 2px solid rgb(185, 174, 174);
+             /* padding-left: 10px;  */
+             position: relative;
+             left: 700px;
+             cursor: pointer; 
+        }
+        .sideheading{
+             /* font-size: 17px;
+             margin-left: 10px;
+             padding-left: 10px;
+             position: relative;
+             left: 800px;
+             cursor: pointer;  */
+        }
+       .sideheading1:hover,.sideheading2:hover,.head:hover{
+        border-bottom: 2px solid black;
+       }
+       .nav2{
+        display: flex;
+        justify-content: space-evenly;
+        font-family: sans-serif;
+        font-weight: 600;
+       }
+       .add1{
+        display: flex;
+        justify-content: center;
+        color: grey;
+       }
+       .add img{
+        position: relative;
+        left: 16px;
+        width: 700px;
+        cursor: pointer;
+       }
+       .ad{
+        writing-mode: vertical-lr;
+        position: relative;
+        left: 18px;
+        top: 5px;  
+       }
+       .text{
+        /* margin-left: 150px; */
+        font-family: sans-serif;
+       }
+       h4{
+        /* margin-left: 150px; */
+        font-family: sans-serif;
+       }
+       .info1{
+        /* margin-left: 150px; */
+        font-size: 55px;
+       }
+       .info2{
+        display: flex;
+        align-items: center;
+       }
+       .info2 p{
+           /* margin-left: 10px; */
+           border-left: 2px solid grey;
+           padding-left: 10px;
+       }
+       .imgs{
+        display: flex;
+        justify-content: space-between;
+       }
+       .img2 img{
+        width: 700px;
+        /* margin-left: 150px; */
+       }
+       .img3 img{
+        width: 300px;
+        /* margin-left: 100px; */
+       }
+       .awards{
+        display: flex;
+        justify-content:space-between; 
+       }
+       .award{
+        /* margin-left: -30px; */
+        /* padding-left: -60px; */
+       }
+       .info3{
+        width: 100%;
+        text-align: center;
+        font-family: sans-serif;
+       }
+       .award img{
+        width: 350px;
+       }
+       .Awards{
+        display: flex; 
+       }
+       .overall1{
+        background-color: rgba(206, 199, 199, 0.151);
+       }
+       .cream img{
+        width: 750px;
+        /* margin-right: 50px; */
+       }    
+       .overall2{
+        display: flex;
+        justify-content:space-evenly;
+       }    
+       .img4 img{
+        width: 160px;
+        /* margin-left: 70px; */
+        /* padding-bottom:20px ; */
+       }
+       .info4{
+        margin-left: 10px;
+       }
+       .pro{
+        display: flex;
+        /* justify-content: space-between; */
+       }
+       /* .img5{
+        border-bottom: 1px solid rgb(221, 209, 209);
+        width: 850px;
+        height: 250px;
+        margin-left: 70px;
+        z-index: 1;
+       }
+       .img5 img{
+        width: 300px;
+        padding-top: 25px;
+        padding-bottom:20px ;
+        margin-left: 1px;
+       } */
+       .overall3{
+        display: flex;
+        justify-content: space-between;
+       }
+       .new1{
+        display: flex;
+       }
+       .new2{
+        display: flex;
+       }
+       .new3{
+        display: flex;
+       }
+       .the1{
+        display: flex;
+       }
+       .awa{
+        display: flex;
+        flex-direction: column;
+       }
+       .new5{
+        display: flex;
+       }
+       .the2{
+        display: flex;
+       }
+       .add11{
+        /* margin-left: 50px; */
+       }
+       .info6{
+        margin-left: 10px;
+       }
+       .info5{
+        margin-left: 20px;
+       }
+       .skincare{
+        /* margin-left: 70px; */
+       }
+       .imgs{
+        /* margin-left: 40px; */
+       }
+       .img3{
+        /* margin-left: 50px; */
+       }
+       .sideheading{
+        display: none;
+       }
+       .the4{
+        display: flex;
+        flex-direction: column;
+       }
+       /* .award1 img{
+        margin-left: -20px;
+       } */
+       /* .allstar div{
+        margin-left: -20px;
+       } */
+        /* .animework{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover
+        40%;
+       }
+       @keyframes appear {
+        from{
+            opacity: 0;
+            scale: 0.7;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+       } */
+       .overall4{
+        /* margin-left: -520px; */
+        /* margin-top: 23px; */
+       }
+        .add11 img{
+        width: 320px;
+       }
+       .overall5{
+        display: flex;
+        justify-content: space-between;
+       }
+       .veg img{
+        width: 750px;
+        /* margin-left: 70px; */
+       }
+       .img7{
+        /* border-bottom: 1px solid rgb(221, 209, 209); */
+        /* width: 850px;
+        height: 250px;
+        margin-left: 70px;
+        z-index: 1; */
+       }
+       .img7 img{
+        width: 300px;
+        /* padding-top: 25px; */
+        /* padding-bottom:20px ; */
+        /* margin-left: 1px; */
+       }
+       .overall7{
+        /* margin-left: -520px; */
+        /* margin-top: 23px; */
+       }
+       .img8 img{
+        width: 100%;
+        position: relative;
+        top: -10px;
+        /* margin-left: 1px; */
+        z-index: 0;
+         }
+       .info9{
+        background-color: white;
+        border-radius: 10px;
+        width: 300px;
+        height:410px;
+        z-index: 1;
+        position: absolute;
+        left: 100px;
+        /* position: relative; */
+        /* margin-top: 500px; */
+        /* margin-left: 70px; */
+       }
+       .full{
+        display: flex;
+        /* position: fixed; */
+       } 
+       .overall9{
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+       }
+       .footer1 li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px;
+       }
+       .footer1{
+          display: flex;
+          margin-left: -55px;
+       }
+       .footer2 li a,.footer3 li a,.footer4 li a{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-family: sans-serif;
+        }
+       .footer2 li{
+        display: inline-block;
+        margin: 10px;
+       }
+       .footer2{
+        display: flex;
+        flex-direction: column;
+       }
+       .footer3 li,.footer4 li{
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        font-weight: 100;
+       }
+       .add11{
+        position: sticky;
+        top: 20px;
+       }
+       .newletters:hover{
+          background-color: purple;
+       }
+       .info8{
+        /* margin-left: 20px; */
+       }       
+       .the2,.the1{
+        justify-content: space-between;
+       }
+       .the10{
+        display:flex ;
+       }
+       @media only screen and (min-width: 320px) and (max-width: 374px){
+        .navbar{
+            width: 100%;
+            height: 40px;
+        }
+        .nav1{
+            display: flex;
+            justify-content: space-around;
+        }
+        .logo img{
+            width: 110px;
+            margin-left: 45px;
+        }
+        .sideheading{
+            display: block;
+        }
+        .sideheading1,.sideheading2{
+            display: none;
+        }
+        .nav2{
+            display: none;
+        }
+        .add1{
+            display: none;
+        }    
+        .info1{
+            font-size: small;
+        }
+        .img3{
+            display: none;
+        }
+        .imgs{
+            margin: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+        }
+        .imgs .img2 img{
+             width: 100%;
+             margin: 0px;
+        }
+        .overall1 info3{
+            font-size: 20px;
+        }
+        .overall1 .the4{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-left: -13px;
+        }          
+        .pro{
+            display: flex;
+            float: left;
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+        }
+        .img4 img{
+            width:180px ;
+            margin: 0px;
+            
+        }
+        .info4{
+            height: 110px;
+            font-size: small;
+        }
+        .info4 p{
+            display: none;
+        }
+        .overall2{
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+        }
+        .cream img{
+            width: 100%;
+            margin: 0px;
+        }
+        .cream{
+            margin: 0px;
+        }
+        .allstar{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0px;
+            }
+            .protein{
+                background-color: aliceblue;
+            }
+            .add11{
+                display: none;
+            }
+            .overall3{
+                padding: 0px;
+                margin: 0px;
+            }
+            .new1{
+                display: flex;
+            }
+            .info5{
+                padding-left: 10px;
+                font-size: xx-small;
+            }
+            .overall5{
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            }
+            .veg{
+                padding: 0px;
+                margin: 0px;
+            }
+            .veg img{
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+            .health{
+            background-color: white;
+            }
+            .prot{
+                display: flex;
+                flex-direction: column;
+               margin-left: 0px;
+            }
+            .new2{
+                display: flex;
+            }
+            .info6{
+                margin: 0px;
+                font-size: small;
+            }
+            .img6 img{
+                width: 200px;
+            }
+            .add11{
+                display: none;
+            }
+            .overall6{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .new3{
+                display: flex;
+            }
+            .img7 img{
+                width: 150px;
+            }
+            .info8{
+                margin: 0px;
+                text-wrap: wrap;
+                font-size: smaller;
+            }
+            .info9{
+                display: none;
+            }
+            .img8 img{
+                width: 100%;
+            }
+            .add1{
+                display: none;
+            }
+            .new4{
+                margin: 0px;
+                /* margin-left: 30px; */
+            }
+            .new5{
+                display:flex ;
+                flex-direction: row;
+            }
+            .img9 img{
+                width: 150px;
+                margin-left: 0px;
+            }
+            .the{
+                margin: 0px;
+                font-size:x-small;
+            }
+            .overall9{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .awards{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .skincare .info1{
+                font-size:larger;
+            }
+            .skincare{
+                margin: 0px;
+                /* margin: 30px; */
+            }
+            .img5 img{
+                margin-left: 0px;
+            }
+            .info5{
+                margin-left: 0px;
+            }
+            .img6 img{
+                margin-left: 0px;
+            }
+            .info6{
+                margin-left: 10px;
+            }
+            .img7 img{
+                margin-left: 0px;
+            }
+            .inf08{
+                margin-left: 0px;
+                font-size:smaller;
+            }
+            .award img{
+                margin: 0px;
+                width: 100%;
+            }
+            .award{
+                margin: 0px;
+            }
+            .foo img,.foo{
+                margin: 0px;
+                padding: 0px;
+            }
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            .skincare,.imgs,.overall1,.issue,.latest,.health,.late,.la{
+                padding: 0px 10px;
+            }
+    }
+       @media only screen and (min-width: 375px) and (max-width: 425px){
+        .navbar{
+            width: 100%;
+            height: 40px;
+        }
+        .nav1{
+            display: flex;
+            justify-content: space-around;
+        }
+        .logo img{
+            width: 110px;
+            margin-left: 50px;
+        }
+        .sideheading{
+            display: block;
+        }
+        .sideheading1,.sideheading2{
+            display: none;
+        }
+        .nav2{
+            display: none;
+        }
+        .add1{
+            display: none;
+        }    
+        .info1{
+            font-size: small;
+        }
+        .img3{
+            display: none;
+        }
+        .imgs{
+            margin: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+        }
+        .imgs .img2 img{
+             width: 100%;
+             margin: 0px;
+        }
+        .overall1 info3{
+            font-size: 20px;
+        }
+        .overall1 .the4{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-left: -13px;
+        }          
+        .pro{
+            display: flex;
+            float: left;
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+        }
+        .img4 img{
+            width:180px ;
+            margin: 0px;
+            
+        }
+        .info4{
+            height: 110px;
+            font-size: small;
+        }
+        .info4 p{
+            display: none;
+        }
+        .overall2{
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+        }
+        .cream img{
+            width: 100%;
+            margin: 0px;
+        }
+        .cream{
+            margin: 0px;
+        }
+        .allstar{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0px;
+            }
+            .protein{
+                background-color: aliceblue;
+            }
+            .add11{
+                display: none;
+            }
+            .overall3{
+                padding: 0px;
+                margin: 0px;
+            }
+            .new1{
+                display: flex;
+            }
+            .info5{
+                padding-left: 10px;
+                font-size: xx-small;
+            }
+            .overall5{
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            }
+            .veg{
+                padding: 0px;
+                margin: 0px;
+            }
+            .veg img{
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+            .health{
+            background-color: white;
+            }
+            .prot{
+                display: flex;
+                flex-direction: column;
+               margin-left: 0px;
+            }
+            .new2{
+                display: flex;
+            }
+            .info6{
+                margin: 0px;
+                font-size: small;
+            }
+            .img6 img{
+                width: 200px;
+            }
+            .add11{
+                display: none;
+            }
+            .overall6{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .new3{
+                display: flex;
+            }
+            .img7 img{
+                width: 150px;
+            }
+            .info8{
+                margin: 0px;
+                text-wrap: wrap;
+                font-size: smaller;
+            }
+            .info9{
+                display: none;
+            }
+            .img8 img{
+                width: 100%;
+            }
+            .add1{
+                display: none;
+            }
+            .new4{
+                margin: 0px;
+                /* margin-left: 30px; */
+            }
+            .new5{
+                display:flex ;
+                flex-direction: row;
+            }
+            .img9 img{
+                width: 150px;
+                margin-left: 0px;
+            }
+            .the{
+                margin: 0px;
+                font-size:x-small;
+            }
+            .overall9{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .awards{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .skincare .info1{
+                font-size:larger;
+            }
+            .skincare{
+                margin: 0px;
+                /* margin: 30px; */
+            }
+            .img5 img{
+                margin-left: 0px;
+            }
+            .info5{
+                margin-left: 0px;
+            }
+            .img6 img{
+                margin-left: 0px;
+            }
+            .info6{
+                margin-left: 10px;
+            }
+            .img7 img{
+                margin-left: 0px;
+            }
+            .inf08{
+                margin-left: 0px;
+                font-size:smaller;
+            }
+            .award img{
+                margin: 0px;
+                width: 100%;
+            }
+            .award{
+                margin: 0px;
+            }
+            .foo img,.foo{
+                margin: 0px;
+                padding: 0px;
+            }   
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            .skincare,.imgs,.overall1,.issue,.latest,.health,.late,.la{
+                padding: 0px 20px;
+            }
+    }        
+       @media only screen and (min-width: 426px) and (max-width: 768px){
+        .navbar{
+            width: 100%;
+            height: 40px;
+        }
+        .nav1{
+            display: flex;
+            justify-content: space-around;
+        }
+        .logo img{
+            width: 110px;
+            margin-left: 40px;
+        }
+        .sideheading{
+            display: block;
+        }
+        .sideheading1,.sideheading2{
+            display: none;
+        }
+        .nav2{
+            display: none;
+        }
+        .add1{
+            display: none;
+        }    
+        .info1{
+            font-size: small;
+        }
+        .img3{
+            display: none;
+        }
+        .imgs{
+            margin: 0px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: right;
+        }
+        .imgs .img2 img{
+             width: 100%;
+             margin: 0px;
+        }
+        .overall1 info3{
+            font-size: 20px;
+        }
+        .overall1 .the4{
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin-left: -13px;
+        }          
+        .pro{
+            display: flex;
+            float: left;
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+        }
+        .img4 img{
+            width:180px ;
+            margin: 0px;
+            
+        }
+        .info4{
+            height: 110px;
+            font-size: small;
+        }
+        .info4 p{
+            display: none;
+        }
+        .overall2{
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: column;
+        }
+        .cream img{
+            width: 100%;
+            margin: 0px;
+        }
+        .cream{
+            margin: 0px;
+        }
+        .allstar{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: 0px;
+            }
+            .protein{
+                background-color: aliceblue;
+            }
+            .add11{
+                display: none;
+            }
+            .overall3{
+                padding: 0px;
+                margin: 0px;
+            }
+            .new1{
+                display: flex;
+            }
+            .info5{
+                padding-left: 10px;
+                font-size: xx-small;
+            }
+            .overall5{
+            display: flex;
+            justify-content: left;
+            flex-direction: column;
+            }
+            .veg{
+                padding: 0px;
+                margin: 0px;
+            }
+            .veg img{
+                width: 100%;
+                margin: 0px;
+                padding: 0px;
+            }
+            .health{
+            background-color: white;
+            }
+            .prot{
+                display: flex;
+                flex-direction: column;
+               margin-left: 0px;
+            }
+            .new2{
+                display: flex;
+            }
+            .info6{
+                margin: 0px;
+                font-size: small;
+            }
+            .img6 img{
+                width: 200px;
+            }
+            .add11{
+                display: none;
+            }
+            .overall6{
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .new3{
+                display: flex;
+            }
+            .img7 img{
+                width: 150px;
+            }
+            .info8{
+                margin: 0px;
+                text-wrap: wrap;
+                font-size: smaller;
+            }
+            .info9{
+                display: none;
+            }
+            .img8 img{
+                width: 100%;
+            }
+            .add1{
+                display: none;
+            }
+            .new4{
+                margin: 0px;
+                /* margin-left: 30px; */
+            }
+            .new5{
+                display:flex ;
+                flex-direction: row;
+            }
+            .img9 img{
+                width: 150px;
+                margin-left: 0px;
+            }
+            .the{
+                margin: 0px;
+                font-size:x-small;
+            }
+            .overall9{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .awards{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+            .skincare .info1{
+                font-size:larger;
+            }
+            .skincare{
+                margin: 0px;
+                /* margin: 30px; */
+            }
+            .img5 img{
+                margin-left: 0px;
+            }
+            .info5{
+                margin-left: 0px;
+            }
+            .img6 img{
+                margin-left: 0px;
+            }
+            .info6{
+                margin-left: 10px;
+            }
+            .img7 img{
+                margin-left: 0px;
+            }
+            .inf08{
+                margin-left: 0px;
+                font-size:smaller;
+            }
+            .award img{
+                margin: 0px;
+                width: 100%;
+            }
+            .award{
+                margin: 0px;
+            }
+            .foo img,.foo{
+                margin: 0px;
+                padding: 0px;
+            } 
+            body{
+                margin: 0px;
+                padding: 0px;
+            }
+            .skincare,.imgs,.overall1,.issue,.latest,.health,.late,.la{
+                padding: 0px 30px;
+            }
+   } 
+   @media only screen and (min-width: 769px) and (max-width: 2560px){
+    body{
+            padding: 0px;
+            margin: 0px;
+            background-color:rgb(243, 238, 238) ;
+        }
+        .skincare,.imgs,.overall1,.issue,.latest,.health,.late,.la,.shape{
+                padding: 0px 50px;
+            }
+        .navbar{
+            width: 100%;
+            background-color: aliceblue;
+            height: 140px;
+            border-bottom: 1px solid rgb(221, 209, 209);
+            box-shadow: 3px black;
+        }
+        .nav1{
+            display: flex;
+            align-items: center;
+            }
+            .shape{
+                /* margin-left: 30px; */
+            }
+        .logo,img{
+            margin-top: 4px;
+            width: 200px;
+            /* margin-left: 35px; */
+        }
+        .sideheading1,.sideheading2{
+             font-size: 17px;
+             margin-left: 10px;
+             border-left: 2px solid rgb(185, 174, 174);
+             /* padding-left: 10px;  */
+             position: relative;
+             left: 700px;
+             cursor: pointer; 
+        }
+        .sideheading{
+             /* font-size: 17px;
+             margin-left: 10px;
+             padding-left: 10px;
+             position: relative;
+             left: 800px;
+             cursor: pointer;  */
+        }
+       .sideheading1:hover,.sideheading2:hover,.head:hover{
+        border-bottom: 2px solid black;
+       }
+       .nav2{
+        display: flex;
+        justify-content: space-evenly;
+        font-family: sans-serif;
+        font-weight: 600;
+       }
+       .add1{
+        display: flex;
+        justify-content: center;
+        color: grey;
+       }
+       .add img{
+        position: relative;
+        left: 16px;
+        width: 700px;
+        cursor: pointer;
+       }
+       .ad{
+        writing-mode: vertical-lr;
+        position: relative;
+        left: 18px;
+        top: 5px;  
+       }
+       .text{
+        /* margin-left: 150px; */
+        font-family: sans-serif;
+       }
+       h4{
+        /* margin-left: 150px; */
+        font-family: sans-serif;
+       }
+       .info1{
+        /* margin-left: 150px; */
+        font-size: 55px;
+       }
+       .info2{
+        display: flex;
+        align-items: center;
+       }
+       .info2 p{
+           /* margin-left: 10px; */
+           border-left: 2px solid grey;
+           padding-left: 10px;
+       }
+       .imgs{
+        display: flex;
+        justify-content: space-between;
+       }
+       .img2 img{
+        width: 700px;
+        /* margin-left: 150px; */
+       }
+       .img3 img{
+        width: 300px;
+        /* margin-left: 100px; */
+       }
+       .awards{
+        display: flex;
+        justify-content:space-between; 
+       }
+       .award{
+        /* margin-left: -30px; */
+        /* padding-left: -60px; */
+       }
+       .info3{
+        width: 100%;
+        text-align: center;
+        font-family: sans-serif;
+       }
+       .award img{
+        width: 350px;
+       }
+       .Awards{
+        display: flex; 
+       }
+       .overall1{
+        background-color: rgba(206, 199, 199, 0.151);
+       }
+       .cream img{
+        width: 750px;
+        /* margin-right: 50px; */
+       }    
+       .overall2{
+        display: flex;
+        justify-content:space-evenly;
+       }    
+       .img4 img{
+        width: 160px;
+        /* margin-left: 70px; */
+        /* padding-bottom:20px ; */
+       }
+       .info4{
+        margin-left: 10px;
+       }
+       .pro{
+        display: flex;
+        /* justify-content: space-between; */
+       }
+       /* .img5{
+        border-bottom: 1px solid rgb(221, 209, 209);
+        width: 850px;
+        height: 250px;
+        margin-left: 70px;
+        z-index: 1;
+       }
+       .img5 img{
+        width: 300px;
+        padding-top: 25px;
+        padding-bottom:20px ;
+        margin-left: 1px;
+       } */
+       .overall3{
+        display: flex;
+        justify-content: space-between;
+       }
+       .new1{
+        display: flex;
+       }
+       .new2{
+        display: flex;
+       }
+       .new3{
+        display: flex;
+       }
+       .the1{
+        display: flex;
+       }
+       .awa{
+        display: flex;
+        flex-direction: column;
+       }
+       .new5{
+        display: flex;
+       }
+       .the2{
+        display: flex;
+       }
+       .add11{
+        /* margin-left: 50px; */
+       }
+       .info6{
+        margin-left: 10px;
+       }
+       .info5{
+        margin-left: 20px;
+       }
+       .skincare{
+        /* margin-left: 70px; */
+       }
+       .imgs{
+        /* margin-left: 40px; */
+       }
+       .img3{
+        /* margin-left: 50px; */
+       }
+       .sideheading{
+        display: none;
+       }
+       .the4{
+        display: flex;
+        flex-direction: column;
+       }
+       /* .award1 img{
+        margin-left: -20px;
+       } */
+       /* .allstar div{
+        margin-left: -20px;
+       } */
+        /* .animework{
+        animation: appear linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover
+        40%;
+       }
+       @keyframes appear {
+        from{
+            opacity: 0;
+            scale: 0.7;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+       } */
+       .overall4{
+        /* margin-left: -520px; */
+        /* margin-top: 23px; */
+       }
+        .add11 img{
+        width: 320px;
+       }
+       .overall5{
+        display: flex;
+        justify-content: space-between;
+       }
+       .veg img{
+        width: 750px;
+        /* margin-left: 70px; */
+       }
+       .img7{
+        /* border-bottom: 1px solid rgb(221, 209, 209); */
+        /* width: 850px;
+        height: 250px;
+        margin-left: 70px;
+        z-index: 1; */
+       }
+       .img7 img{
+        width: 300px;
+        /* padding-top: 25px; */
+        /* padding-bottom:20px ; */
+        /* margin-left: 1px; */
+       }
+       .overall7{
+        /* margin-left: -520px; */
+        /* margin-top: 23px; */
+       }
+       .img8 img{
+        width: 100%;
+        position: relative;
+        top: -10px;
+        /* margin-left: 1px; */
+        z-index: 0;
+         }
+       .info9{
+        background-color: white;
+        border-radius: 10px;
+        width: 300px;
+        height:410px;
+        z-index: 1;
+        position: absolute;
+        left: 100px;
+        /* position: relative; */
+        /* margin-top: 500px; */
+        /* margin-left: 70px; */
+       }
+       .full{
+        display: flex;
+        /* position: fixed; */
+       } 
+       .overall9{
+        display: flex;
+        justify-content: space-evenly;
+        text-decoration: none;
+       }
+       .footer1 li {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px;
+       }
+       .footer1{
+          display: flex;
+          margin-left: -55px;
+       }
+       .footer2 li a,.footer3 li a,.footer4 li a{
+        text-decoration: none;
+        color: black;
+        font-weight: 700;
+        font-family: sans-serif;
+        }
+       .footer2 li{
+        display: inline-block;
+        margin: 10px;
+       }
+       .footer2{
+        display: flex;
+        flex-direction: column;
+       }
+       .footer3 li,.footer4 li{
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        font-weight: 100;
+       }
+       .add11{
+        position: sticky;
+        top: 20px;
+       }
+       .newletters:hover{
+          background-color: purple;
+       }
+       .info8{
+        /* margin-left: 20px; */
+       }       
+       .the2,.the1{
+        justify-content: space-between;
+       }
+       .the10{
+        display:flex ;
+       }
+   }
+</style>
+</head>
+<body>
+    <div class="navbar">
+    <div class="nav1">
+        <div><i class="fa-solid fa-list sideheading"></i></div>
+        <div class="logo shape"><img src="shape-logo.png" alt="logo"></div> 
+        <div><i class="fa-solid fa-magnifying-glass sideheading"></i></div>
+        <div class="sideheading1">Newsletters</div>
+        <div class="sideheading2">Sweepstake</div>
+    </div><br><br>
+    
+<div class="nav2">
+    <div class="head">FITNESS</div>
+    <div class="head">BEAUTY</div>
+    <div class="head">HEALTH AND WELLNESS</div>
+    <div class="head">NEWS AND TRENDS</div>
+    <div class="head">FOOD AND NUTRITION</div>
+    <div class="head">WHAT TO BUY</div>
+    <div class="head">APPAREL AND GEAR</div>
+    <div class="head">ABOUT US</div>
+    </div>
+</div>
+     <div class="add1 animework">
+        <div class="add"><span class="ad">Advertisement</span><img src="ADD3.jfif" alt="add"><span class="ad">Advertisement</span></div> 
+    </div>
+    <br>
+
+<div class="skincare">
+    <div>
+    <p class="text" style="color: grey;" >If you click on links we provide, we may receive compensation.</p>
+    <h4>BEAUTY <i class="fa-light fa-greater-than"></i> SKIN CARE</h4>
+    <h1 class="info1">Mandy Moore's Depuffing Eye Balm and More Best-Sellers Are Quietly On Sale from $14</h1>
+    <h4>Including a hydrating face cream I swear by.</h4>
+    </div>
+    <div class="info2">
+        <div class="info"></div><h4>By <ins>Taylor Jeffries</ins></h4><p style="color: grey;">Published on September 12, 2024</p>
+    </div>
+</div><br>
+
+
+    <div class="imgs">
+        <div class="img2"><img src="logo1.webp" alt="logo1"></div>
+        <div class="img3"><img src="add2.png" alt="add2"></div>
+    </div> 
+    
+    
+    
+<div class="overall1 animework">
+        <div><h1 class="info3">The Best Of The Best: Our 2024 Award Winners</h1></div>  
+        <div class="awards">
+            <div class="awa">
+                <div class="award award1"><img src="shp-2024-beauty-awards-hero-b461b173aa674d108bee1c25827a2041.webp" alt="beauty"></div>
+                <div style=" cursor: pointer; text-align: left;" class="new4">
+                    <h4 style="color: gray; font-family: sans-serif;">SKIN CARE <h3>The 12 Best Red Light Therapy<br>Devices You Can Use at Home<pre style="color: grey; font-family: sans-serif;font-size: 13px;">By Christina Heiser</pre></h3></h4>
+                    </div>
+                </div>
+                <div class="awa">
+                <div class="award award2"><img src="shape-sneaker-awards-2024-primary-ahuang-1860-70e1a70c74a94237ac82061d285a0afd.webp" alt="winner"></div>
+                <div style=" cursor: pointer; text-align: left;" class="new4">
+                    <h4 style="color: gray; font-family: sans-serif;">SKIN CARE<h3>What Vitamins Are Good For Your<br>Skin<pre style="color: grey; font-family: sans-serif;font-size: 13px;">By Esme Benjamin</pre></h3></h4>
+                    </div>
+                </div>
+                <div class="awa">
+                <div class="award award3"><img src="Shape-Skin-Awards-Lead-Tout-ac55fb4163de40e7be7d97017f36e441.webp" alt="skin"></div>
+                <div style="cursor: pointer; text-align: left;" class="new4">
+                    <h4 style="color: gray; font-family: sans-serif;">SKIN CARE<h3>Yes. Your Gut Health Can Directly<br>Affect Your Skin Health<pre style="color: grey; font-family: sans-serif;font-size: 13px;">By Frances Largeman-Roth</pre></h3></h4></div>
+                    </div>    
+    <!-- <div class="the4">
+        <div class="award award1"></div>
+        <div class="the7"><h4 style="color: gray; font-family: sans-serif;">Beauty Award <h3 style="text-wrap: wrap;">The 2024 Shape Beauty Awards <pre style="color: grey; font-family: sans-serif;font-size: 13px;">By Jill Di Donato, Madison Barber and Eliza,
+MS,RD,CDN,RYT.</pre></h3></h4></div>
+    </div>
+    
+    <div class="the4">    
+        <div class="award award2"></div>
+        <div class="the7"><h4 style="color: gray; font-family: sans-serif;">Awards<h3 style="text-wrap: wrap;">The 2024 Shape Sneaker Awards <pre style="color: grey; font-family: sans-serif;font-size: 13px;">By Kristen Geil, NASM-CPT</pre></h3></h4></div>
+    </div>
+    
+    <div class="the4">
+        <div class="award award3"></div>
+        <div class="the7"><h4 style="color: gray; font-family: sans-serif;">Skin Care<h3 style="text-wrap: wrap;">The 2024 Shape Skin Awards <pre style="color: grey; font-family: sans-serif;font-size: 13px;">By Jill Di Dorato</pre></h3></h4></div>
+    </div>    -->
+ </div>
+</div> 
+
+
+
+
+<div class="animework protein issue">
+    <div><h1 class="info3">The Protein Issue</h1></div><br>
+    <div  class="overall2">
+        
+<div class="pro">
+    <div class="protein">
+        <div class="the10">
+        <div class="img4"><img src="ProteinMistakesr_3000x20001-c171f01e3ce3477e8d2e6e04082186e6.webp" alt=""></div>
+        <div class="info4 i"><b style="font-family: sans-serif; text-wrap: wrap;">The 6 Protein Mistakes You<br>Might Be Making-And<br>What To Do Instead</b><p style="font-family: sans-serif; color: gray; font-size:14px; margin: 0px;">By Jessica Cording, MS, RD, CDN</p></div>
+        </div>
+        <div class="the10">
+        <div class="img4"><img src="HittingAPlateau_3000x2000-dcca7c3e118448fbba65129713f3e19f.webp" alt=""></div>
+        <div class="info4 n"><b style="font-family: sans-serif; text-wrap: wrap;">Hitting A Plateeau!<br>Inadequate Protein Intake<br>Could Be The Cause</b><p style="font-family: sans-serif; color: gray; font-size:14px; margin: 0px;">By Gabrielle Kassel</p></div>
+        </div>
+        <div class="the10">
+        <div class="img4"><img src="ProteinSecretForHair_3000x2000-d5b4955f4b21449fa912c16b67af70c3.webp" alt=""></div>
+        <div class="info4 f"><b style="font-family: sans-serif; text-wrap: wrap;">Protein: The Secret To<br>Healthler, Thicker Hair</b><p style="font-family: sans-serif; color: gray; font-size:14px; margin: 0px;">By Danielle Page</p></div>
+        </div>
+        <div class="the10">
+        <div class="img4"><img src="100GramsOfProtein_3000x2000-e246dfbbb98c439fbf9d530238484ac3.webp" alt=""></div>
+        <div class="info4 o"><b style="font-family: sans-serif; text-wrap: wrap;">Do You Really Need 100 Grams Of Protein Per Day!</b><p style="font-family: sans-serif; color: gray; font-size:14px; margin: 0px;">By Edwina Clark</p></div>    
+        </div>
+    </div>
+</div>
+    <div class="allstar">
+    <div class="cream"><img src="ProteinAllStarsr_3000x2000-26434fd920804f6ebfade3e371685db9.webp" alt="food"></div>
+    <div><b style="font-family: sans-serif; color: grey;">FOOD & NUTRITION</b><h1>Dietitians Agree, These 15 Snacks Are Protien All-Stars</h1><p style="font-family: sans-serif; color: gray; font-size:14px;">By Jessica Coding, MS, RD, CDN</p></div>
+    </div>
+</div>
+</div><br><br>
+
+
+ <div class="animework latest">
+ <div><h1 class="info3">The Latest</h1></div>
+  <div class="overall3">
+    <div class="new">
+        <div class="new1">
+    <div class="img5"><img src="shp-growth-shampoo-tout-1e1ead96615c4977beed4fcee7bed7ab.webp" alt="shampoo"></div>
+    <div class="info5"><b style="font-family: sans-serif; color: grey;">HAIR</b><h2>A 58-Year-old's Hair Extra Texture and<br>Thickness' Form This Growth Shampoo</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+       </div><hr>
+       <div class="new1">
+    <div class="img5"><img src="pain-relief-cream-leaves-tight-muscles-tout-2255424692f74033bb6a45409890fc82.webp" alt=""></div>
+    <div class="info5"><b style="font-family: sans-serif; color: grey;">HEALTH AND WELLNESS</b><h2>This S16 Pain Relief Cream Leaves Chronically<br>Stiff Muscles 'Relaxed' Per Shoppers</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+       </div><hr>
+       <div class="new1">
+    <div class="img5"><img src="shp-amazons-best-neck-creams-tout-7001e1caa4a3489fa6c2ecb401cc9715.webp" alt=""></div> 
+    <div class="info5"><b style="font-family: sans-serif; color: grey;">BODY CARE</b><h2>Mature Shoppers Say This Firming Neck Cream<br>Makes Skin 'Noticeably Tighter'</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+       </div><hr>
+       <div class="new1">
+    <div class="img5"><img src="shp-hydrating-serum-that-plumps-skin-tout-7f6336d5fcf2430296f0420b45bcc907.webp" alt=""></div>
+    <div class="info5"><b style="font-family: sans-serif; color: grey;">SKIN CARE</b><h2>Shoppers' Dry Mature Skin Is 'Much Smoother'<br>Thanks to This On-Sale Plumping Serum</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+       </div><hr>
+       <div class="new1">
+    <div class="img5"><img src="shp-shoppers-walk-long-distances-pain-free-in-these-cushy-sneakers-tout-fd44c1d914e74422b7003c22e3ec940d.webp" alt=""></div>
+    <div class="info5"><b style="font-family: sans-serif; color: grey;">SHOES</b><h2>Shoppers Walk 10K Steps In These 'Light As a <br>Feather' Shoes From an Oprah-Wworn Brand</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+       </div><hr>
+       <div class="new1">
+    <div class="img5"><img src="6000x4000_1686_SHAPEUMF_Lead_Sleep-852d1c8ade2246dfb582e0f89ba9b4c4.webp" alt=""></div> 
+    <div class="info5"><b style="font-family: sans-serif; color: grey;">HEALTH AND WELLNESS</b><h2>Sleep Doctors Say *This* Is The Best Temperature<br>for Sleep</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Gabrielle Kassel</p></div>
+       </div><hr>
+ </div>
+
+<div class="add11">
+    <img src="add2.png" alt="add" ></div>
+</div>
+
+</div><br><br>
+ 
+
+ <div class="animework health">
+    <div style="text-align: center;"><h1 class="info7">Health and Nutrition</h1></div><br>
+    <div class="overall5 ">
+        <div class="allstar">
+            <div class="veg"><img src="shutterstock_1069332170-2000-364c5bccbb1e4e2a83a0e4cfdc15723a.webp" alt="food"></div>
+            <div style="text-wrap: wrap;"><b style="font-family: sans-serif; color: grey;">WEIGHT MANAGEMENT</b><h1>If You're Stumped on How to Eat Healthy, This 7-Day<br>Diet Plan Can Help</h1><p style="font-family: sans-serif; color: gray; font-size:14px;">By Shape Editor and Eliza Savage, MS, RD, CDN, RYT</p></div>
+        </div>
+    <br><br>
+<div class="prot">
+    <div class="new2">
+      <div class="img6"><img src="vegetarian-diet-for-weight-loss-promo-53ce70d97af340008aed89c93585ecf5.webp" alt="" style="width: 180px; padding-bottom: 20px;"></div>
+      <div class="info6" style=" text-wrap: wrap;"><b style="font-family: sans-serif;">25 Foods That Act As<br>Naturals Appetite<br>Suppressants</b><p style="font-family: sans-serif; color: gray; font-size:14px;">By Jennipher Walters</p></div>
+    </div> <hr>
+    <div class="new2">
+      <div class="img6"><img src="120723-Foods-Hair-Health-77dc51f91da146fb83de36262e942853.webp" alt="" style="width: 180px; padding-bottom: 20px;"></div>
+      <div class="info6" style=" text-wrap: wrap;"><b style="font-family: sans-serif;">The #1 Food To Eat For Hair<br>Health</b><p style="font-family: sans-serif; color: gray; font-size:14px;">By Iris Goldsztajn</p></div>
+    </div> <hr>
+    <div class="new2">
+      <div class="img6"><img src="SHP-Revamped-Routines-Wellness-Social-Media-Mistakes-2x3-9b10f536c88446f088dd0fb5d30cecd2.webp" alt="" style="width: 180px; padding-bottom: 20px;"></div>
+      <div class="info6" style=" text-wrap: wrap;"><b style="font-family: sans-serif;">The 7 Wellness Mistakes You<br>Didn't Realize You're<br>Making</b><p style="font-family: sans-serif; color: gray; font-size:14px;">By Jessica Cording, MS, RD, CDN</p></div>
+    </div> <hr>
+    <div class="new2">
+      <div class="img6"><img src="121123-Healthy-Snacks-580c9c06ae13487e9fa0c20f1036f202.webp" alt="" style="width: 180px; padding-bottom: 20px;"></div>
+      <div class="info6" style=" text-wrap: wrap;"><b style="font-family: sans-serif;">17 Healthy Snack Ideas<br>That Will Curb Every<br>Craving</b><p style="font-family: sans-serif; color: gray; font-size:14px;">By Sarah Garone, NDTR</p></div>   
+    </div> <hr>
+    </div>
+</div>
+    </div>
+ </div>
+</div><br><br>
+
+
+
+<div class="animework late">
+    <div><h1 style="text-align: center;">The Latest</h1></div>
+    <div class="the1">
+     <div class="overall6">
+       
+    <div class="new3">
+       <div class="img7"><img src="shp-lululemon-just-dropped-its-new-arrivals-tout-d7cc30afe6ff49bb92f0acbf92333bd3.webp" alt="shampoo"></div>
+       <div class="info6"><b style="font-family: sans-serif; color: grey;">HAIR</b><h2>A 58-Year-old's Hair Extra Texture and<br>Thickness' Form This Growth Shampoo</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+    </div> <hr>
+    <div class="new3">   
+       <div class="img7"><img src="shp-jennifer-anistons-favorite-repair-treatment-leaves-shoppers-8917221af18a4d1cb3b666cb5eefd05f.webp" alt=""></div>
+       <div class="info6"><b style="font-family: sans-serif; color: grey;">HEALTH AND WELLNESS</b><h2>This S16 Pain Relief Cream Leaves Chronically<br>Stiff Muscles 'Relaxed' Per Shoppers</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+    </div> <hr>
+    <div class="new3">
+       <div class="img7"><img src="the-best-budget-treadmills-shape-tout-1f0b9a7a362145ccb1f69478b590813f.webp" alt=""></div>
+       <div class="info6"><b style="font-family: sans-serif; color: grey;">BODY CARE</b><h2>Mature Shoppers Say This Firming Neck Cream<br>Makes Skin 'Noticeably Tighter'</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+    </div> <hr>
+    <div class="new3">
+       <div class="img7"><img src="6000x4000_1686_SHAPEUMF_Lead_Dandruff-b166f6c8ee604117bdec124c71651b1e.webp" alt=""></div>
+       <div class="info6"><b style="font-family: sans-serif; color: grey;">SKIN CARE</b><h2>Shoppers' Dry Mature Skin Is 'Much Smoother'<br>Thanks to This On-Sale Plumping Serum</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+    </div> <hr>
+    <div class="new3">
+       <div class="img7"><img src="shoppers-dry-scaly-patches-soft-smoothing-body-lotion-on-sale-tout-a8540ad029f14ce4b1b89ac8f5f98394.webp" alt=""></div>
+       <div class="info6"><b style="font-family: sans-serif; color: grey;">SHOES</b><h2>Shoppers Walk 10K Steps In These 'Light As a <br>Feather' Shoes From an Oprah-Wworn Brand</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+    </div> <hr>
+    <div class="new3">
+       <div class="img7"><img src="shp-retinol-formulas-that-celebs-swear-by-tout-18f6ebb815a149a6bf1c3fa06bb0b699 (1).webp" alt=""></div>
+       <div class="info6"><b style="font-family: sans-serif; color: grey;">HEALTH AND WELLNESS</b><h2>Sleep Doctors Say *This* Is The Best Temperature<br>for Sleep</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Gabrielle Kassel</p></div>
+    </div>
+    </div>
+
+   
+      <div class="add11">
+           <img src="add2.png" alt="add"></div>
+      </div>
+    </div>
+</div><br> 
+  <hr>
+  <br>
+   <div class="animework full">   
+    <div class="info9"><h5 style="margin-left: 20px;">SPORTS BRAS</h5><h1 style="margin-left: 20px; margin-top: -15px;">We Tried the Viral Posture-Correxting Bra Taylor Swift Wears to Rehearse--Here's Our Full<br>Review</h2><h4 style="margin-left: 20px; margin-top: -13px;">A shape editor tested the forme bra for<br>posture-correcting for one month. Here's<br>what happened</h4><p style="margin-left: 20px; margin-top: -10px; font-family: sans-serif; color: grey;">By kristen Geil, NASM-CPT</p></div> 
+    <div class="img8"><img src="122223-Posture-Correcting-Bra-Landing-Page-Header-c55d982271ff43bdb614ff0d73a03109.webp" alt="posture"></div>   
+</div><br><br>
+
+<div class="add1 animework">
+    <div class="add"><span class="ad">Advertisement</span><img src="ADD3.jfif" alt="add"><span class="ad">Advertisement</span></div> 
+</div><br><br>
+
+<div class="overall1 animework">
+    <div><h1 class="info3">Beauty</h1></div>
+<br>  
+    <div class="awards">
+    <div class="awa">
+    <div class="award award1"><img src="shp-best-red-light-therapy-devices-tout-b8399c165a704aef8fd69fdad9362ae5.webp" alt="beauty"></div>
+    <div style=" cursor: pointer; text-align: left;" class="new4">
+        <h4 style="color: gray; font-family: sans-serif;">SKIN CARE <h3>The 12 Best Red Light Therapy<br>Devices You Can Use at Home<pre style="color: grey; font-family: sans-serif;font-size: 13px;">By Christina Heiser</pre></h3></h4>
+        </div>
+    </div>
+    <div class="awa">
+    <div class="award award2"><img src="040524-Vitamins-for-Skin-e7aa07aa6a9943a78f94938b5bf258e3.webp" alt="winner"></div>
+    <div style=" cursor: pointer; text-align: left;" class="new4">
+        <h4 style="color: gray; font-family: sans-serif;">SKIN CARE<h3>What Vitamins Are Good For Your<br>Skin<pre style="color: grey; font-family: sans-serif;font-size: 13px;">By Esme Benjamin</pre></h3></h4>
+        </div>
+    </div>
+    <div class="awa">
+    <div class="award award3"><img src="SHP-Beauty-Awards-Oral-Probiotics-ffbb7814712741a694460c6bd6354ac3.webp" alt="skin"></div>
+    <div style="cursor: pointer; text-align: left;" class="new4">
+        <h4 style="color: gray; font-family: sans-serif;">SKIN CARE<h3>Yes. Your Gut Health Can Directly<br>Affect Your Skin Health<pre style="color: grey; font-family: sans-serif;font-size: 13px;">By Frances Largeman-Roth</pre></h3></h4></div>
+        </div>
+</div>
+</div>
+    
+    
+    
+</div>
+</div><br><br> 
+
+ <!-- THE LATEST SECTION  --> 
+  
+  <div class="animework la">
+    <div><h1 style="text-align: center;">The Latest</h1></div>
+    <div class="the2">
+     <div class="overall6">
+       
+    <div class="new5">
+       <div class="img9"><img src="shp-thickening-shampoos-that-nicole-kidman-jennifer-garner-swear-by-tout-e47f82dea1924da8865856f7ecbed885.webp" alt="shampoo"></div>
+       <div class="info6 the"><b style="font-family: sans-serif; color: grey;">HAIR</b><h2>A 58-Year-old's Hair Extra Texture and<br>Thickness' Form This Growth Shampoo</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+    </div> <hr>
+    <div class="new5">
+       <div class="img9"><img src="shp-hospital-workers-sore-feet-love-these-tout-66af99f716594ee4bcc8c4f9577c85d3.webp" alt=""></div>
+       <div class="info6 the"><b style="font-family: sans-serif; color: grey;">HEALTH AND WELLNESS</b><h2>This S16 Pain Relief Cream Leaves Chronically<br>Stiff Muscles 'Relaxed' Per Shoppers</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+    </div> <hr>
+    <div class="new5">
+       <div class="img9"><img src="shp-amazon-prime-big-deals-tout-e59807eda59d417c99fe1e86bda8f8b6.webp" alt=""></div>
+       <div class="info6 the"><b style="font-family: sans-serif; color: grey;">BODY CARE</b><h2>Mature Shoppers Say This Firming Neck Cream<br>Makes Skin 'Noticeably Tighter'</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+    </div> <hr>
+    <div class="new5">
+       <div class="img9"><img src="best-shoes-strength-training-final-0c33eba5e8ca415e8ab30b4e44d1e5b6.webp" alt=""></div>
+       <div class="info6 the"><b style="font-family: sans-serif; color: grey;">SKIN CARE</b><h2>Shoppers' Dry Mature Skin Is 'Much Smoother'<br>Thanks to This On-Sale Plumping Serum</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+    </div> <hr> 
+    <div class="new5">
+       <div class="img9"><img src="Everything-You-Need-to-Know-About-Pilates-For-Beginners-GettyImages-1314531226-2000-d714bc625f5c4852baf451cb06d2eca4.webp" alt=""></div>
+       <div class="info6 the"><b style="font-family: sans-serif; color: grey;">SHOES</b><h2>Shoppers Walk 10K Steps In These 'Light As a <br>Feather' Shoes From an Oprah-Wworn Brand</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Taylor Jeffries</p></div>
+    </div> <hr>
+    <div class="new5">
+        <div class="img9"><img src="How-To-Train-for-a-5k-Even-If-You-Cant-Run-a-Mile-Yet-GettyImages-1290084849-2000-098fcc30bf2f42a08e98de28e80121f3.webp" alt=""></div>
+        <div class="info6 the"><b style="font-family: sans-serif; color: grey;">HEALTH AND WELLNESS</b><h2>Sleep Doctors Say *This* Is The Best Temperature<br>for Sleep</h2><p style="font-family: sans-serif; color: gray; font-size:14px;">By Gabrielle Kassel</p></div>
+    </div>
+</div>
+
+   <div class="add11">
+    <img src="add2.png" alt="add"></div>
+   </div>
+</div>
+   </div><br><br>
+
+   <div class="add1 animework">
+    <div class="add"><span class="ad">Advertisement</span><img src="ADD3.jfif" alt="add"><span class="ad">Advertisement</span></div> 
+</div><br><br><br>
+
+<!-- footer section  --> 
+
+ <hr>
+ <br>
+<div>
+    <center>
+    <div class="foo">
+        <img src="shape-logo.png" alt="logo">
+    </div><br><br>
+    </center>
+    <div class="overall9">
+        <div class="footer0">
+            <h3 class="newletters" style="border:3px solid purple; text-align: center; padding: 10px;" ><a href="" style="text-decoration: none; color: black;" class="newletterss" >NEW LETTERS</a></h3>
+            <h5>Follow Us</h5>
+       <ul class="footer1">
+        <li style="color:blue; cursor: pointer;"><i class="fa-brands fa-facebook-f"></i></li>
+        <li style="color:black; cursor: pointer;"><i class="fa-brands fa-x-twitter"></i></li>
+        <li style="color:red; cursor: pointer;"><i class="fa-brands fa-pinterest-p"></i></li>
+        <li style="color:purple; cursor: pointer;"><i class="fa-brands fa-instagram"></i></li>
+        <li style="color:green; cursor: pointer;"><i class="fa-brands fa-whatsapp"></i></li>
+        <li style="color:red; cursor: pointer;"><i class="fa-brands fa-youtube"></i></li>
+       </ul> 
+    </div>   
+    <div>
+        <ul class="footer2">
+            <li><a href="">FITNESS</a></li>
+            <li><a href="">BEAUTY</a></li>
+            <li><a href="">HEALTH AND WELLNESS</a></li>
+            <li><a href="">NEWS AND NUTRITION</a></li>
+            <li><a href="">FOOD AND NUTRITION</a></li>
+            <li><a href="">LIFESTYLE</a></li>
+            <li><a href="">APPAREL AND GEAR</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="footer3">
+            <li><a href="">About Us</a></li>
+            <li><a href="">Privacy Policy</a></li>
+            <li><a href="">Terms of Service</a></li>
+            <li><img src="seals.svg" alt="" width="40px" height="40px" style="margin-left: -35px;" ></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="footer4">
+            <li><a href="">Diversity & Inclusion <br>Pledge</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Advertise</a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+</body>
+</html>
